@@ -43,3 +43,7 @@ Ardından `http://localhost:8000` adresini aç. Port 8000 kullanımda ise komutt
 
 - [AI_NOTLARI.md](AI_NOTLARI.md): Copilot istemleri, öneriler ve uygulama kararları.
 - [TEST_NOTLARI.md](TEST_NOTLARI.md): Arama, gezinme ve mobil görünüm test senaryoları.
+## Repository Bağlantısı
+
+Bu projenin kaynak kodlarına ve geliştirme geçmişine aşağıdaki bağlantıdan ulaşabilirsiniz:
+- **GitHub Repository:** [Data Science & AI Club Website](https://github.com/rnsuainn/data-science-ai-club-website.git)
