@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Data Science & AI Club etkinlikleri: atölyeler, yarışmalar ve söyleşiler.">
+  <title>Etkinlikler | Data Science & AI Club</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas class="data-field" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#icerik">İçeriğe geç</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Data Science & AI Club ana sayfa">
+      <span class="brand-mark" aria-hidden="true">DS<span>+</span></span>
+      <span class="brand-name">Data Science<br>& AI Club</span>
+    </a>
+    <nav class="site-nav" aria-label="Ana gezinme">
+      <a href="index.html">Ana Sayfa</a>
+      <a class="active" href="etkinlikler.html" aria-current="page">Etkinlikler</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+    </nav>
+  </header>
+
+  <main id="icerik">
+    <section class="page-intro page-shell">
+      <p class="eyebrow"><span class="eyebrow-dot"></span> TAKVİM / 2026</p>
+      <h1>Birlikte <span>öğreniyoruz.</span></h1>
+      <p>İlk kod satırından gerçek dünya problemlerine: merakını besleyecek buluşmalara göz at.</p>
+      <div class="intro-index"><span>01 — 05</span><span>ATÖLYE · YARIŞMA · SÖYLEŞİ</span></div>
+    </section>
+
+    <!-- Arama denetimleri kart listesinden önce gelir; sayaç ve boş durum ekran okuyuculara da bildirilir. -->
+    <section class="event-search page-shell" aria-label="Etkinlik arama">
+      <label for="search">Etkinlik başlıklarında ara</label>
+      <div class="search-controls">
+        <input id="search" type="search" placeholder="Örn. Python, SQL..." autocomplete="off">
+        <button class="clear-search" id="clear-search" type="button">Temizle</button>
+      </div>
+      <p class="event-count" id="event-count" aria-live="polite">Gösterilen Etkinlik Sayısı: 5</p>
+      <p class="search-empty" id="search-empty" role="status" hidden>Aradığınız kriterlere uygun veri bilimi etkinliği bulunamadı</p>
+    </section>
+
+    <section class="event-list page-shell" aria-label="Yaklaşan etkinlikler">
+      <article class="event-card event-lime">
+        <div class="event-index">01</div>
+        <div class="event-main"><p class="event-type">ATÖLYE · BAŞLANGIÇ</p><h2>Python ile Veri Analizine Giriş</h2><p class="event-description">Pandas ile bir veri setini keşfet, temizle ve ilk anlamlı grafiklerini oluştur. Daha önce Python deneyimi gerekmiyor.</p></div>
+        <div class="event-details"><p><span>TARİH</span>12 Kasım 2026 · 14.00</p><p><span>YER</span>Merkez Kütüphane · Lab 2</p></div>
+        <div class="event-mark" aria-hidden="true">↗</div>
+      </article>
+      <article class="event-card event-coral">
+        <div class="event-index">02</div>
+        <div class="event-main"><p class="event-type">UYGULAMALI WORKSHOP</p><h2>Machine Learning Workshop</h2><p class="event-description">Gerçek bir veri problemi üzerinde model kurmanın temellerini öğren; tahminlerini test et ve sonuçları yorumla.</p></div>
+        <div class="event-details"><p><span>TARİH</span>19 Kasım 2026 · 13.30</p><p><span>YER</span>Mühendislik Fakültesi · B-204</p></div>
+        <div class="event-mark" aria-hidden="true">↗</div>
+      </article>
+      <article class="event-card event-blue">
+        <div class="event-index">03</div>
+        <div class="event-main"><p class="event-type">TEKNİK EĞİTİM</p><h2>SQL & Veri Tabanı Eğitimi</h2><p class="event-description">SELECT'ten JOIN'e, sorgularla verinin içinden cevap çıkar. Küçük bir örnek veri tabanında bol bol pratik yap.</p></div>
+        <div class="event-details"><p><span>TARİH</span>26 Kasım 2026 · 15.00</p><p><span>YER</span>İktisadi ve İdari Bilimler · A-106</p></div>
+        <div class="event-mark" aria-hidden="true">↗</div>
+      </article>
+      <article class="event-card event-lilac">
+        <div class="event-index">04</div>
+        <div class="event-main"><p class="event-type">KAMPÜS YARIŞMASI</p><h2>Kaggle Kampüs Yarışması</h2><p class="event-description">Takımını kur, açık bir veri setini analiz et ve çözümünü sun. Yeni başlayanlar için mentorluk ve başlangıç oturumu var.</p></div>
+        <div class="event-details"><p><span>TARİH</span>5 Aralık 2026 · 10.00</p><p><span>YER</span>Öğrenci Merkezi · Etkinlik Salonu</p></div>
+        <div class="event-mark" aria-hidden="true">↗</div>
+      </article>
+      <article class="event-card event-yellow">
+        <div class="event-index">05</div>
+        <div class="event-main"><p class="event-type">SEMİNER · AÇIK OTURUM</p><h2>Yapay Zeka ve Veri Etiği</h2><p class="event-description">Algoritmalar kararlarımızı nasıl etkiliyor? Önyargı, gizlilik ve sorumlu yapay zeka üzerine birlikte düşünelim.</p></div>
+        <div class="event-details"><p><span>TARİH</span>10 Aralık 2026 · 16.00</p><p><span>YER</span>Merkez Kampüs · Konferans Salonu</p></div>
+        <div class="event-mark" aria-hidden="true">↗</div>
+      </article>
+    </section>
+    <section class="event-note page-shell"><span class="note-star" aria-hidden="true">✳</span><p>Etkinliklere katılım ve kayıt bilgileri için kulüp ekibiyle iletişime geçebilirsin.</p><a href="hakkimizda.html">Ekibi tanı <span aria-hidden="true">→</span></a></section>
+  </main>
+
+  <footer class="site-footer"><div class="page-shell footer-inner"><a class="footer-brand" href="index.html">DS<span>+</span>AI CLUB</a><p>Merakla başlar. Veriyle büyür.</p><span class="footer-year">KAMPÜS · 2026</span></div></footer>
+</body>
+</html>
